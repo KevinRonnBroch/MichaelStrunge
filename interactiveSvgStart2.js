@@ -13,7 +13,7 @@ async function runProgram() {
   // 1. Load svg map
   //------------------------------------------------------------------------------------
 
-  let myJson = await fetch("kort.json");
+  let myJson = await fetch("/kort.json");
   steder = await myJson.json();
 
   let mySvg = await fetch("/kbhsvgmap12.svg");
