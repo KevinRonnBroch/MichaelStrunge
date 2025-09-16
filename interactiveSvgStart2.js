@@ -16,7 +16,7 @@ async function runProgram() {
   let myJson = await fetch("kort.json");
   steder = await myJson.json();
 
-  let mySvg = await fetch("/public/kbhsvgmap12.svg");
+  let mySvg = await fetch("/kbhsvgmap12.svg");
   let svg = await mySvg.text();
 
   document.querySelector("#map").innerHTML = svg;
